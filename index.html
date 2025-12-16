@@ -1,0 +1,464 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta name="color-scheme" content="light dark" />
+    <title>SwipeTidy — Privacy, Terms, Support</title>
+    <style>
+      :root { --max: 920px; --pad: 18px; --radius: 14px; }
+      body { margin: 0; font: 16px/1.55 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif; }
+      header { padding: 28px var(--pad); border-bottom: 1px solid rgba(127,127,127,.25); }
+      main { max-width: var(--max); margin: 0 auto; padding: 24px var(--pad) 60px; }
+      h1 { margin: 0 0 6px; font-size: 28px; }
+      .sub { margin: 0; opacity: .75; }
+      nav { display: flex; gap: 10px; flex-wrap: wrap; margin-top: 14px; }
+      nav a { display: inline-block; padding: 10px 12px; border: 1px solid rgba(127,127,127,.25); border-radius: 999px; text-decoration: none; color: inherit; }
+      .bar { display: flex; gap: 12px; align-items: center; flex-wrap: wrap; margin-top: 14px; }
+      select { padding: 10px 12px; border-radius: 10px; border: 1px solid rgba(127,127,127,.35); background: transparent; color: inherit; }
+      section { margin-top: 22px; padding: 18px; border: 1px solid rgba(127,127,127,.25); border-radius: var(--radius); }
+      section > h2 { margin: 0 0 10px; font-size: 20px; }
+      .lang { display: none; }
+      .lang.active { display: block; }
+      .muted { opacity: .75; }
+      .note { padding: 12px; border-left: 4px solid rgba(127,127,127,.4); background: rgba(127,127,127,.08); border-radius: 10px; }
+      code { font-family: ui-monospace,SFMono-Regular,Menlo,Monaco,Consolas,monospace; font-size: .95em; }
+      a { color: inherit; }
+      ul { margin: 10px 0 0 18px; }
+      footer { margin-top: 26px; opacity: .75; font-size: 13px; }
+      h3 { margin: 16px 0 8px; font-size: 16px; }
+    </style>
+  </head>
+
+  <body>
+    <header>
+      <div style="max-width: 920px; margin: 0 auto;">
+        <h1>SwipeTidy</h1>
+        <p class="sub">Privacy Policy • Terms of Use • Support</p>
+
+        <div class="bar">
+          <label for="langSelect" class="muted">Language:</label>
+          <select id="langSelect" aria-label="Language selector">
+            <option value="en">English</option>
+            <option value="fr">Français</option>
+            <option value="es">Español</option>
+            <option value="de">Deutsch</option>
+            <option value="it">Italiano</option>
+            <option value="pt-BR">Português (Brasil)</option>
+            <option value="ja">日本語</option>
+            <option value="ko">한국어</option>
+            <option value="zh-Hans">简体中文</option>
+          </select>
+        </div>
+
+        <nav aria-label="Document navigation">
+          <a href="#privacy">Privacy</a>
+          <a href="#terms">Terms</a>
+          <a href="#support">Support</a>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <div class="note">
+        <div class="lang" data-lang="en">
+          Single page for Privacy/Terms/Support. Use anchors:
+          <code>#privacy</code>, <code>#terms</code>, <code>#support</code>.
+        </div>
+        <div class="lang" data-lang="fr">
+          Page unique pour Confidentialité/Conditions/Support. Utilise les ancres :
+          <code>#privacy</code>, <code>#terms</code>, <code>#support</code>.
+        </div>
+        <div class="lang" data-lang="es">Página única con anclas <code>#privacy</code>, <code>#terms</code>, <code>#support</code>.</div>
+        <div class="lang" data-lang="de">Eine Seite mit <code>#privacy</code>, <code>#terms</code>, <code>#support</code>.</div>
+        <div class="lang" data-lang="it">Pagina unica con <code>#privacy</code>, <code>#terms</code>, <code>#support</code>.</div>
+        <div class="lang" data-lang="pt-BR">Página única com <code>#privacy</code>, <code>#terms</code>, <code>#support</code>.</div>
+        <div class="lang" data-lang="ja">単一ページ（<code>#privacy</code>/<code>#terms</code>/<code>#support</code>）。</div>
+        <div class="lang" data-lang="ko">단일 페이지(<code>#privacy</code>/<code>#terms</code>/<code>#support</code>).</div>
+        <div class="lang" data-lang="zh-Hans">单页（<code>#privacy</code>/<code>#terms</code>/<code>#support</code>）。</div>
+      </div>
+
+      <!-- PRIVACY -->
+      <section id="privacy">
+        <h2>Privacy Policy</h2>
+
+        <div class="lang" data-lang="en">
+          <p class="muted">Effective date: 2025-12-14</p>
+          <p>
+            This Privacy Policy explains how <strong>SwipeTidy</strong> (the “App”) handles information. The App is designed to
+            process your photo library <strong>on-device</strong>.
+          </p>
+
+          <h3>1) Photos & Permissions</h3>
+          <ul>
+            <li>The App requests access to your Photos library to display items and let you decide what to keep or delete.</li>
+            <li>Photo analysis (duplicates, screenshots, blur detection, barcode detection) is performed on your device.</li>
+            <li>We do not upload your photos or videos to our servers.</li>
+          </ul>
+
+          <h3>2) Data We Collect</h3>
+          <ul>
+            <li><strong>No account required</strong> and no server-side profile.</li>
+            <li><strong>No analytics</strong>, no ads SDK, no third-party trackers.</li>
+            <li><strong>No crash reporter SDK</strong>. (Apple may still provide crash/diagnostic data if you enabled sharing in iOS settings.)</li>
+            <li><strong>Local app data only</strong> (on your device): preferences, language, scan cache, premium state, and similar operational data.</li>
+            <li><strong>Purchases</strong> are processed by Apple (StoreKit). We do not receive your payment details.</li>
+          </ul>
+
+          <h3>3) Data Sharing</h3>
+          <ul>
+            <li>We do not sell your data.</li>
+            <li>We do not share your photos with third parties.</li>
+            <li>Apple may process purchase-related information as part of App Store transactions.</li>
+          </ul>
+
+          <h3>4) Retention</h3>
+          <ul>
+            <li>Local data remains on your device and can be removed by deleting the App.</li>
+          </ul>
+
+          <h3>5) Contact</h3>
+          <p>
+            Thomas PIQUEPAILLE (Bordeaux, France) — <a href="mailto:asupriifg@gmail.com">asupriifg@gmail.com</a>
+          </p>
+        </div>
+
+        <div class="lang" data-lang="fr">
+          <p class="muted">Date d’effet : 2025-12-14</p>
+          <p>
+            Cette Politique de confidentialité explique comment <strong>SwipeTidy</strong> (l’« App ») traite les informations.
+            L’App est conçue pour analyser ta photothèque <strong>sur l’appareil</strong>.
+          </p>
+
+          <h3>1) Photos & autorisations</h3>
+          <ul>
+            <li>L’App demande l’accès à Photos pour afficher les éléments et te laisser décider quoi conserver ou supprimer.</li>
+            <li>L’analyse (doublons, captures d’écran, flou, codes‑barres) est effectuée sur ton appareil.</li>
+            <li>Aucune photo/vidéo n’est envoyée sur nos serveurs.</li>
+          </ul>
+
+          <h3>2) Données collectées</h3>
+          <ul>
+            <li><strong>Aucun compte</strong> requis et aucun profil serveur.</li>
+            <li><strong>Aucun analytics</strong>, pas de pub, pas de trackers tiers.</li>
+            <li><strong>Aucun crash reporter</strong>. (Apple peut néanmoins fournir des diagnostics si tu as activé le partage dans iOS.)</li>
+            <li><strong>Données locales uniquement</strong> (sur ton appareil) : préférences, langue, cache de scan, état premium, etc.</li>
+            <li><strong>Achats</strong> : gérés par Apple (StoreKit). Nous ne recevons pas tes informations de paiement.</li>
+          </ul>
+
+          <h3>3) Partage</h3>
+          <ul>
+            <li>Nous ne vendons pas tes données.</li>
+            <li>Nous ne partageons pas tes photos avec des tiers.</li>
+            <li>Apple peut traiter les informations liées aux transactions App Store.</li>
+          </ul>
+
+          <h3>4) Conservation</h3>
+          <ul>
+            <li>Les données locales restent sur l’appareil et sont supprimées en désinstallant l’App.</li>
+          </ul>
+
+          <h3>5) Contact</h3>
+          <p>
+            Thomas PIQUEPAILLE (Bordeaux, France) — <a href="mailto:asupriifg@gmail.com">asupriifg@gmail.com</a>
+          </p>
+        </div>
+
+        <!-- Short translations -->
+        <div class="lang" data-lang="es">
+          <p class="muted">Fecha: 2025-12-14</p>
+          <p><strong>SwipeTidy</strong> procesa tu biblioteca <strong>en el dispositivo</strong>. No subimos fotos/vídeos a servidores.</p>
+          <ul>
+            <li>Sin cuenta, sin analíticas, sin trackers, sin SDK de crash.</li>
+            <li>Solo datos locales (preferencias, idioma, caché, estado premium).</li>
+            <li>Compras vía Apple (StoreKit).</li>
+          </ul>
+          <p>Contacto: Thomas PIQUEPAILLE — <a href="mailto:asupriifg@gmail.com">asupriifg@gmail.com</a></p>
+        </div>
+
+        <div class="lang" data-lang="de">
+          <p class="muted">Datum: 2025-12-14</p>
+          <p><strong>SwipeTidy</strong> verarbeitet deine Mediathek <strong>auf dem Gerät</strong>. Keine Uploads auf Server.</p>
+          <ul>
+            <li>Kein Konto, keine Analytics, keine Tracker, kein Crash‑SDK.</li>
+            <li>Nur lokale Daten (Einstellungen, Sprache, Cache, Premium‑Status).</li>
+            <li>Käufe über Apple (StoreKit).</li>
+          </ul>
+          <p>Kontakt: Thomas PIQUEPAILLE — <a href="mailto:asupriifg@gmail.com">asupriifg@gmail.com</a></p>
+        </div>
+
+        <div class="lang" data-lang="it">
+          <p class="muted">Data: 2025-12-14</p>
+          <p><strong>SwipeTidy</strong> elabora la libreria <strong>sul dispositivo</strong>. Nessun upload su server.</p>
+          <ul>
+            <li>Nessun account, nessuna analytics, nessun tracker, nessun crash‑SDK.</li>
+            <li>Solo dati locali (preferenze, lingua, cache, stato premium).</li>
+            <li>Acquisti via Apple (StoreKit).</li>
+          </ul>
+          <p>Contatto: Thomas PIQUEPAILLE — <a href="mailto:asupriifg@gmail.com">asupriifg@gmail.com</a></p>
+        </div>
+
+        <div class="lang" data-lang="pt-BR">
+          <p class="muted">Data: 2025-12-14</p>
+          <p><strong>SwipeTidy</strong> processa <strong>no dispositivo</strong>. Não enviamos fotos/vídeos para servidores.</p>
+          <ul>
+            <li>Sem conta, sem analytics, sem rastreadores, sem SDK de crash.</li>
+            <li>Apenas dados locais (preferências, idioma, cache, status premium).</li>
+            <li>Compras via Apple (StoreKit).</li>
+          </ul>
+          <p>Contato: Thomas PIQUEPAILLE — <a href="mailto:asupriifg@gmail.com">asupriifg@gmail.com</a></p>
+        </div>
+
+        <div class="lang" data-lang="ja">
+          <p class="muted">日付: 2025-12-14</p>
+          <p><strong>SwipeTidy</strong> は <strong>端末内</strong> で処理します。写真/動画をサーバーへアップロードしません。</p>
+          <ul>
+            <li>アカウント不要。解析/トラッカー/クラッシュSDKなし。</li>
+            <li>ローカルデータのみ（設定、言語、キャッシュ、プレミアム状態）。</li>
+            <li>購入はApple（StoreKit）。</li>
+          </ul>
+          <p>連絡先: Thomas PIQUEPAILLE — <a href="mailto:asupriifg@gmail.com">asupriifg@gmail.com</a></p>
+        </div>
+
+        <div class="lang" data-lang="ko">
+          <p class="muted">날짜: 2025-12-14</p>
+          <p><strong>SwipeTidy</strong>은 <strong>기기 내</strong>에서 처리하며 서버로 업로드하지 않습니다.</p>
+          <ul>
+            <li>계정/분석/트래커/크래시 SDK 없음.</li>
+            <li>로컬 데이터만(설정, 언어, 캐시, 프리미엄 상태).</li>
+            <li>구매는 Apple(StoreKit).</li>
+          </ul>
+          <p>문의: Thomas PIQUEPAILLE — <a href="mailto:asupriifg@gmail.com">asupriifg@gmail.com</a></p>
+        </div>
+
+        <div class="lang" data-lang="zh-Hans">
+          <p class="muted">日期：2025-12-14</p>
+          <p><strong>SwipeTidy</strong> 主要在<strong>设备本地</strong>处理，不会将照片/视频上传到服务器。</p>
+          <ul>
+            <li>无需账号；无分析、无追踪、无崩溃统计 SDK。</li>
+            <li>仅本地数据（设置、语言、缓存、会员状态）。</li>
+            <li>购买由 Apple（StoreKit）处理。</li>
+          </ul>
+          <p>联系：Thomas PIQUEPAILLE — <a href="mailto:asupriifg@gmail.com">asupriifg@gmail.com</a></p>
+        </div>
+      </section>
+
+      <!-- TERMS -->
+      <section id="terms">
+        <h2>Terms of Use</h2>
+
+        <div class="lang" data-lang="en">
+          <p class="muted">Effective date: 2025-12-14</p>
+
+          <h3>1) Standard EULA (Apple)</h3>
+          <p>
+            Your use is also subject to Apple’s Licensed Application End User License Agreement (Standard EULA):
+            <a href="https://www.apple.com/legal/internet-services/itunes/dev/stdeula/" target="_blank" rel="noopener noreferrer">
+              www.apple.com/legal/internet-services/itunes/dev/stdeula
+            </a>
+          </p>
+
+          <h3>2) Subscriptions (Auto‑Renewable)</h3>
+          <ul>
+            <li>No free trial is offered (unless explicitly stated in the App Store for your region).</li>
+            <li>Payment is charged to your Apple ID account at confirmation of purchase.</li>
+            <li>Subscriptions automatically renew unless auto‑renew is turned off at least 24 hours before the end of the current period.</li>
+            <li>Your account will be charged for renewal within 24 hours prior to the end of the current period.</li>
+            <li>You can manage and cancel subscriptions in your App Store account settings.</li>
+            <li>To restore purchases, use “Restore Purchases” in the App.</li>
+          </ul>
+
+          <h3>3) Disclaimer</h3>
+          <p class="muted">
+            The App is provided “as is”. Detection results are best‑effort and may be imperfect. Always review items before deleting.
+          </p>
+
+          <h3>4) Governing Law</h3>
+          <p class="muted">
+            These Terms are governed by the laws of France. Place of establishment: Bordeaux, France.
+          </p>
+
+          <h3>5) Contact</h3>
+          <p>Thomas PIQUEPAILLE — <a href="mailto:asupriifg@gmail.com">asupriifg@gmail.com</a></p>
+        </div>
+
+        <div class="lang" data-lang="fr">
+          <p class="muted">Date d’effet : 2025-12-14</p>
+
+          <h3>1) EULA standard Apple</h3>
+          <p>
+            Ton utilisation est également soumise au contrat de licence standard d’Apple :
+            <a href="https://www.apple.com/legal/internet-services/itunes/dev/stdeula/" target="_blank" rel="noopener noreferrer">
+              www.apple.com/legal/internet-services/itunes/dev/stdeula
+            </a>
+          </p>
+
+          <h3>2) Abonnements (renouvellement automatique)</h3>
+          <ul>
+            <li>Aucun essai gratuit n’est proposé (sauf indication contraire explicite sur l’App Store dans ton pays).</li>
+            <li>Le paiement est débité via ton identifiant Apple à la confirmation.</li>
+            <li>L’abonnement se renouvelle automatiquement sauf désactivation au moins 24 h avant la fin de la période en cours.</li>
+            <li>Le compte est débité du renouvellement dans les 24 h précédant la fin de la période en cours.</li>
+            <li>Gestion/annulation dans les réglages de ton compte App Store.</li>
+            <li>Restauration : utiliser “Restaurer les achats” dans l’App.</li>
+          </ul>
+
+          <h3>3) Avertissement</h3>
+          <p class="muted">
+            L’App est fournie “en l’état”. Les résultats de détection sont au mieux des estimations et peuvent être imparfaits.
+            Vérifie toujours avant suppression.
+          </p>
+
+          <h3>4) Droit applicable</h3>
+          <p class="muted">
+            Les présentes conditions sont régies par le droit français. Établissement : Bordeaux, France.
+          </p>
+
+          <h3>5) Contact</h3>
+          <p>Thomas PIQUEPAILLE — <a href="mailto:asupriifg@gmail.com">asupriifg@gmail.com</a></p>
+        </div>
+
+        <!-- Short translations (with mandatory Apple EULA link) -->
+        <div class="lang" data-lang="es">
+          <p class="muted">Fecha: 2025-12-14</p>
+          <p>EULA Apple: <a href="https://www.apple.com/legal/internet-services/itunes/dev/stdeula/" target="_blank" rel="noopener noreferrer">www.apple.com/legal/internet-services/itunes/dev/stdeula</a></p>
+          <ul>
+            <li>Suscripción autorrenovable, sin prueba gratuita.</li>
+            <li>Gestiona/cancela en Ajustes de App Store; “Restaurar compras” para restaurar.</li>
+          </ul>
+          <p>Contacto: <a href="mailto:asupriifg@gmail.com">asupriifg@gmail.com</a></p>
+        </div>
+
+        <div class="lang" data-lang="de">
+          <p class="muted">Datum: 2025-12-14</p>
+          <p>Apple EULA: <a href="https://www.apple.com/legal/internet-services/itunes/dev/stdeula/" target="_blank" rel="noopener noreferrer">www.apple.com/legal/internet-services/itunes/dev/stdeula</a></p>
+          <ul>
+            <li>Auto‑renew Abo, keine Gratis‑Testphase.</li>
+            <li>Verwaltung im App Store; „Käufe wiederherstellen“.</li>
+          </ul>
+          <p>Kontakt: <a href="mailto:asupriifg@gmail.com">asupriifg@gmail.com</a></p>
+        </div>
+
+        <div class="lang" data-lang="it">
+          <p class="muted">Data: 2025-12-14</p>
+          <p>EULA Apple: <a href="https://www.apple.com/legal/internet-services/itunes/dev/stdeula/" target="_blank" rel="noopener noreferrer">www.apple.com/legal/internet-services/itunes/dev/stdeula</a></p>
+          <ul>
+            <li>Abbonamento con rinnovo automatico, nessuna prova gratuita.</li>
+            <li>Gestisci in App Store; “Ripristina acquisti”.</li>
+          </ul>
+          <p>Contatto: <a href="mailto:asupriifg@gmail.com">asupriifg@gmail.com</a></p>
+        </div>
+
+        <div class="lang" data-lang="pt-BR">
+          <p class="muted">Data: 2025-12-14</p>
+          <p>EULA Apple: <a href="https://www.apple.com/legal/internet-services/itunes/dev/stdeula/" target="_blank" rel="noopener noreferrer">www.apple.com/legal/internet-services/itunes/dev/stdeula</a></p>
+          <ul>
+            <li>Assinatura com renovação automática, sem teste grátis.</li>
+            <li>Gerencie na App Store; “Restaurar compras”.</li>
+          </ul>
+          <p>Contato: <a href="mailto:asupriifg@gmail.com">asupriifg@gmail.com</a></p>
+        </div>
+
+        <div class="lang" data-lang="ja">
+          <p class="muted">日付: 2025-12-14</p>
+          <p>Apple EULA: <a href="https://www.apple.com/legal/internet-services/itunes/dev/stdeula/" target="_blank" rel="noopener noreferrer">www.apple.com/legal/internet-services/itunes/dev/stdeula</a></p>
+          <ul>
+            <li>自動更新サブスク（無料トライアルなし）。</li>
+            <li>App Store設定で管理。復元は「購入を復元」。</li>
+          </ul>
+          <p>連絡先: <a href="mailto:asupriifg@gmail.com">asupriifg@gmail.com</a></p>
+        </div>
+
+        <div class="lang" data-lang="ko">
+          <p class="muted">날짜: 2025-12-14</p>
+          <p>Apple EULA: <a href="https://www.apple.com/legal/internet-services/itunes/dev/stdeula/" target="_blank" rel="noopener noreferrer">www.apple.com/legal/internet-services/itunes/dev/stdeula</a></p>
+          <ul>
+            <li>자동 갱신 구독(무료 체험 없음).</li>
+            <li>App Store 설정에서 관리. “구매 복원”.</li>
+          </ul>
+          <p>문의: <a href="mailto:asupriifg@gmail.com">asupriifg@gmail.com</a></p>
+        </div>
+
+        <div class="lang" data-lang="zh-Hans">
+          <p class="muted">日期：2025-12-14</p>
+          <p>Apple EULA：<a href="https://www.apple.com/legal/internet-services/itunes/dev/stdeula/" target="_blank" rel="noopener noreferrer">www.apple.com/legal/internet-services/itunes/dev/stdeula</a></p>
+          <ul>
+            <li>自动续订订阅（无免费试用）。</li>
+            <li>在 App Store 设置中管理；使用“恢复购买”。</li>
+          </ul>
+          <p>联系：<a href="mailto:asupriifg@gmail.com">asupriifg@gmail.com</a></p>
+        </div>
+      </section>
+
+      <!-- SUPPORT -->
+      <section id="support">
+        <h2>Support</h2>
+
+        <div class="lang" data-lang="en">
+          <p class="muted">Contact: <a href="mailto:asupriifg@gmail.com">asupriifg@gmail.com</a> — Bordeaux, France</p>
+          <h3>Subscription help</h3>
+          <ul>
+            <li>Cancel: iOS Settings → your name → Subscriptions → SwipeTidy.</li>
+            <li>Restore: open the App → “Restore Purchases”.</li>
+            <li>Refunds: handled by Apple (Report a Problem / App Store support).</li>
+          </ul>
+        </div>
+
+        <div class="lang" data-lang="fr">
+          <p class="muted">Contact : <a href="mailto:asupriifg@gmail.com">asupriifg@gmail.com</a> — Bordeaux, France</p>
+          <h3>Aide abonnements</h3>
+          <ul>
+            <li>Annuler : Réglages iOS → ton nom → Abonnements → SwipeTidy.</li>
+            <li>Restaurer : dans l’App → “Restaurer les achats”.</li>
+            <li>Remboursements : gérés par Apple (Signaler un problème / support App Store).</li>
+          </ul>
+        </div>
+
+        <div class="lang" data-lang="es"><p class="muted">Contacto: <a href="mailto:asupriifg@gmail.com">asupriifg@gmail.com</a></p></div>
+        <div class="lang" data-lang="de"><p class="muted">Kontakt: <a href="mailto:asupriifg@gmail.com">asupriifg@gmail.com</a></p></div>
+        <div class="lang" data-lang="it"><p class="muted">Contatto: <a href="mailto:asupriifg@gmail.com">asupriifg@gmail.com</a></p></div>
+        <div class="lang" data-lang="pt-BR"><p class="muted">Contato: <a href="mailto:asupriifg@gmail.com">asupriifg@gmail.com</a></p></div>
+        <div class="lang" data-lang="ja"><p class="muted">連絡先: <a href="mailto:asupriifg@gmail.com">asupriifg@gmail.com</a></p></div>
+        <div class="lang" data-lang="ko"><p class="muted">문의: <a href="mailto:asupriifg@gmail.com">asupriifg@gmail.com</a></p></div>
+        <div class="lang" data-lang="zh-Hans"><p class="muted">联系：<a href="mailto:asupriifg@gmail.com">asupriifg@gmail.com</a></p></div>
+      </section>
+
+      <footer>
+        <div class="muted">SwipeTidy • v1.0.0 • Last updated: 2025-12-14</div>
+      </footer>
+    </main>
+
+    <script>
+      (function () {
+        const supported = ["en","fr","es","de","it","pt-BR","ja","ko","zh-Hans"];
+        const map = (l) => {
+          if (!l) return "en";
+          const norm = l.replace("_","-");
+          if (supported.includes(norm)) return norm;
+          const base = norm.split("-")[0];
+          const hit = supported.find(x => x === base);
+          if (hit) return hit;
+          if (base === "pt") return "pt-BR";
+          if (base === "zh") return "zh-Hans";
+          return "en";
+        };
+
+        const select = document.getElementById("langSelect");
+        const blocks = Array.from(document.querySelectorAll(".lang"));
+
+        function setLang(lang) {
+          const resolved = map(lang);
+          blocks.forEach(b => b.classList.toggle("active", b.dataset.lang === resolved));
+          select.value = resolved;
+          try { localStorage.setItem("swipetidy_lang", resolved); } catch {}
+          document.documentElement.lang = resolved === "pt-BR" ? "pt-BR" : resolved;
+        }
+
+        const saved = (() => { try { return localStorage.getItem("swipetidy_lang"); } catch { return null; } })();
+        setLang(saved || map(navigator.language || "en"));
+
+        select.addEventListener("change", () => setLang(select.value));
+      })();
+    </script>
+  </body>
+</html>
